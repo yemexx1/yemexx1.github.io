@@ -79,7 +79,7 @@
 <div>
     <i class="fa"></i>
     <h2>Adeyemi Olaoye</h2>
-    <h1 id="quote">Under Construction</h1>
+    <h1 id="quote"></h1>
     <h1 id="author"></h1>
 </div>
 
@@ -102,14 +102,63 @@
             $(this).addClass(colors[i]);
         });
 
-        $.get('http://quotes.rest/qod.json?category=inspire', function (data) {
-            try {
-                $('#quote').html(data.quotes[0].quote);
-                $('#author').html('- ' + data.quotes[0].author);
-            } catch (e) {
-                console.log(e);
-            }
-        });
+        var myQuotes = ["A family that prays together  stays together",
+            "Lead by example not by precepts ",
+            "David improvised, improvise",
+            "Feed yourself",
+            "Familiarity breeds contempt",
+            "Intimacy comes about by careful cultivation ",
+            "Whatever your hand finds to do, do it well",
+            "Be faithful in little",
+            "Read about parenting",
+            "Track a cone career path",
+            "Be knowledgeable, don't be confused, understand.",
+            "Professional knowledge and spiritual maturity gives a balance.",
+            "Only the weak beats the child.",
+            "Nobody lives on feasts, take meals!",
+            "A Christian in bondage is merely holding on to the chains!",
+            "The hands that rocks the cradle rules the world!",
+            "When life presses you, what is inside you will come out",
+            "Faith works!",
+            "Sin is not smart, Sin is emotional!",
+            "Your emotions can consume your strength and your strengths",
+            "Sin is a ministration of emotions",
+            "The believer is infinitely more powerful than the devil",
+            "You can control how you feel",
+            "You can't win again sin without a controlled emotional life",
+            "Actively control your emotions, don't let it conceive!",
+            "Grow depth, height is automatic",
+            "You will get busier if you will be great",
+            "Labour with the grace",
+            "You are as limited as you are in your mind",
+            "Purpose is more than prosperity",
+            "Flee mediocrity!",
+            "There's no excuse for not fulfilling purpose",
+            "There's something as submitting to God.",
+            "Appreciate the little incremental steps than the final one",
+            "The pulpit is first of all spiritual before being physical",
+            "Lead yourself!",
+            "The hardest people/person to lead is yourself.",
+            "You can't be full of faith and void of power!",
+            "Indiscipline breeds indiscipline.",
+            "Friends come and friends go, but a true friend sticks by you like family.",
+            "Tell your friends the truth",
+            "Never lie to keep a friend",
+            "Fear God",
+            "Being good at work doesn't mean you're a good man ",
+            "We must be dependent upon the Holy Spirit to receive the wisdom of God in our lives.",
+            "Only words spoken by the Spirit of God can reach the spirit of man.",
+            "Purpose is measured or identified by pursuit.",
+            "Life is full of choice. You choose whatever you want and do whatever you want. Choose well.",
+            "Training, discipleship and discipline produces great people that don't forget God.",
+            "With God nothing shall be impossible.",
+            "All things are possible to them that believe",
+            "The best of men at their very best are still men",
+            "Long after the cost of excellence is forgotten it's value remains",
+            "The future belongs to those who set their sights on what is humanly unattainable."];
+
+            var quote = myQuotes[Math.floor(Math.random() * myQuotes.length)];
+            $('#quote').html(quote);
     });
 </script>
 </body>
