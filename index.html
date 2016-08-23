@@ -1,87 +1,116 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>WEBSITE TITLE</title>
-  <meta name="" content="Coming Soon...">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WEBSITE TITLE</title>
+    <meta name="" content="Coming Soon...">
 
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,700|Lora:400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,700|Lora:400italic,700italic' rel='stylesheet'
+          type='text/css'>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-  <style type="text/css">
+    <style type="text/css">
 
-    body {
-      font-family:'lato', san-serif;
-      background-color: #170b01;
-      padding: 0;
-      margin: 0;
-      color: #fff;
+        body {
+            font-family: 'lato', san-serif;
+            background-color: #170b01;
+            padding: 0;
+            margin: 0;
+            color: #fff;
 
-    }
+        }
 
-    .pink {background-color: #170b01;}
-    .blue {background-color: #170b01;}
-    .purple {background-color: #170b01;}
-    .black {background-color: #170b01;}
-    .orange {background-color: #170b01;}
+        .pink {
+            background-color: #0a1702;
+        }
 
-    div {
-      height: 3.6em;
-      text-align: center;
-      margin: auto;
-      position: absolute;
-      top: 0; left: 0; bottom: 0; right: 0;
-    }
+        .blue {
+            background-color: #26061e;
+        }
 
-    h1 {
-      font-weight: 300;
-      opacity: 0.8;
-      font-size: 1em;
-    }
+        .purple {
+            background-color: #052819;
+        }
 
-    i {
-      font-size: 2em;
-      opacity: 0.9;
-      margin-bottom: 0.5em;
-      margin-left: 0em;
-    }
+        .black {
+            background-color: #010317;
+        }
 
-  </style>
+        .orange {
+            background-color: #331303;
+        }
+
+        div {
+            height: 3.6em;
+            text-align: center;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        h1, span {
+            font-weight: 300;
+            opacity: 0.8;
+            font-size: 1em;
+        }
+
+        i {
+            font-size: 2em;
+            opacity: 0.9;
+            margin-bottom: 0.5em;
+            margin-left: 0em;
+        }
+
+    </style>
 
 </head>
 <body>
 <div>
-  <i class="fa"></i>
-  <h2>Adeyemi Olaoye</h2>
-  <h1>Under Construction</h1>
+    <i class="fa"></i>
+    <h2>Adeyemi Olaoye</h2>
+    <h1 id="quote">Under Construction</h1>
+    <h1 id="author"></h1>
 </div>
 
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 <script type="text/javascript">
-  function randOrd() {
-    return (Math.round(Math.random())-0.5);
-  }
+    function randOrd() {
+        return (Math.round(Math.random()) - 0.5);
+    }
 
-  $(document).ready(function() {
-    var klasses = [ 'fa-sun-o', 'fa-magic','fa-magnet', 'fa-lemon-o', 'fa-flask' ];
-    klasses.sort( randOrd );
-    $('div i').each(function(i, val) {
-      $(this).addClass(klasses[i]);
+    $(document).ready(function () {
+        var klasses = ['fa-sun-o', 'fa-magic', 'fa-magnet', 'fa-lemon-o', 'fa-flask'];
+        klasses.sort(randOrd);
+        $('div i').each(function (i, val) {
+            $(this).addClass(klasses[i]);
+        });
+
+        var colors = ['blue', 'orange', 'pink', 'purple', 'black'];
+        colors.sort(randOrd);
+        $('body').each(function (i, val) {
+            $(this).addClass(colors[i]);
+        });
+
+        $.get('http://quotes.rest/qod.json?category=inspire', function (data) {
+            try {
+                $('#quote').html(data.quotes[0].quote);
+                $('#author').html('- ' + data.quotes[0].author);
+            } catch (e) {
+                console.log(e);
+            }
+        });
     });
-
-    var colors = [ 'blue', 'orange','pink', 'purple', 'black' ];
-    colors.sort( randOrd );
-    $('body').each(function(i, val) {
-      $(this).addClass(colors[i]);
-    });
-
-
-
-  });
 </script>
 </body>
 </html>
