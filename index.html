@@ -90,9 +90,6 @@
 
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 <script type="text/javascript">
-    function randOrd() {
-        return (Math.round(Math.random()) - 0.5);
-    }
 
     $(document).ready(function () {
         var klasses = ['fa-sun-o', 'fa-magic', 'fa-magnet', 'fa-lemon-o', 'fa-flask'];
@@ -100,8 +97,6 @@
         $('div i').each(function (i, val) {
             $(this).addClass(klasses[i]);
         });
-
-        changeBackground();
 
         var myQuotes = ["A family that prays together  stays together",
             "Lead by example not by precepts ",
@@ -158,6 +153,9 @@
             "Long after the cost of excellence is forgotten it's value remains",
             "The future belongs to those who set their sights on what is humanly unattainable."];
 
+        function randOrd() {
+            return (Math.round(Math.random()) - 0.5);
+        }
 
         function showMyQuote() {
             var quote = myQuotes[Math.floor(Math.random() * myQuotes.length)];
@@ -171,11 +169,14 @@
             var colors = ['blue', 'orange', 'pink', 'purple', 'black'];
             colors.sort(randOrd);
             $('body').each(function (i, val) {
+                $(this).prop('class', '');
                 $(this).addClass(colors[i]);
             });
         }
 
+        changeBackground();
         showMyQuote();
+
         setInterval(function () {
             changeBackground();
             showMyQuote();
