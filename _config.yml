@@ -1,2 +1,31 @@
-name: Hank Quinlan, Horrible Cop
-markdown: kramdown
+# top level stuff you probably don't need to touch
+highlighter: pygments
+markdown: rdiscount
+rdiscount:
+  extensions: [smart]
+permalink: /:title.html
+paginate: 5
+gems: [jekyll-paginate]
+port: 3000
+safe: true
+
+
+# edit here to achieve your personal greatness
+url: http://adeyemiolaoye.me/
+baseurl: /
+title: Adeyemi Olaoye
+author: Adeyemi Olaoye
+description: Adeyemi Olaoye
+avatar: profile.png
+email: yemexx1@gmail.com
+github: yemexx1 # username
+twitter: yemexx1
+linkedin: adeyemi-olaoye-36726749
+stackoverflow: users/1215010/adeyemi   #e.g: users/2735833/proton1h1
+#Comment out if you don't want disqus 
+#disqus: username
+google_analytics: UA-83070806-1
+
+
+# needed for travis-ci build
+exclude: [vendor]
