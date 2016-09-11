@@ -1,5 +1,4 @@
 # top level stuff you probably don't need to touch
-highlighter: pygments
 permalink: /:title.html
 paginate: 5
 gems: [jekyll-paginate]
