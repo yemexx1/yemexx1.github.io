@@ -21,6 +21,7 @@ stackoverflow: users/1215010/adeyemi   #e.g: users/2735833/proton1h1
 #Comment out if you don't want disqus 
 #disqus: username
 tagmanager_id: GTM-M2H47X
+ogimage: profile_200.png
 
 
 # needed for travis-ci build
