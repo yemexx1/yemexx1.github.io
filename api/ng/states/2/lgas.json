@@ -1,0 +1,4 @@
+---
+layout: null
+---
+{{ site.data.state_2_lgas | jsonify }}

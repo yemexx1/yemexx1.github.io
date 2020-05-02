@@ -1,0 +1,187 @@
+[
+  {
+    "id": 1,
+    "state": "Abia State",
+    "capital": "Umuahia"
+  },
+  {
+    "id": 2,
+    "state": "Adamawa State",
+    "capital": "Yola"
+  },
+  {
+    "id": 3,
+    "state": "Akwa Ibom State",
+    "capital": "Uyo"
+  },
+  {
+    "id": 4,
+    "state": "Anambra State",
+    "capital": "Awka"
+  },
+  {
+    "id": 5,
+    "state": "Bauchi State",
+    "capital": "Bauchi"
+  },
+  {
+    "id": 6,
+    "state": "Bayelsa State",
+    "capital": "Yenagoa"
+  },
+  {
+    "id": 7,
+    "state": "Benue State",
+    "capital": "Makurdi"
+  },
+  {
+    "id": 8,
+    "state": "Borno State",
+    "capital": "Maiduguri"
+  },
+  {
+    "id": 9,
+    "state": "Cross River State",
+    "capital": "Calabar"
+  },
+  {
+    "id": 10,
+    "state": "Delta State",
+    "capital": "Warri"
+  },
+  {
+    "id": 11,
+    "state": "Ebonyi State",
+    "capital": "Abakaliki"
+  },
+  {
+    "id": 12,
+    "state": "Edo State",
+    "capital": "Benin"
+  },
+  {
+    "id": 13,
+    "state": "Ekiti State",
+    "capital": "Ado-Ekiti"
+  },
+  {
+    "id": 14,
+    "state": "Enugu State",
+    "capital": "Enugu"
+  },
+  {
+    "id": 15,
+    "state": "Federal Capital Territory",
+    "capital": "Abuja"
+  },
+  {
+    "id": 16,
+    "state": "Gombe State",
+    "capital": "Gombe"
+  },
+  {
+    "id": 17,
+    "state": "Imo State",
+    "capital": "Owerri"
+  },
+  {
+    "id": 18,
+    "state": "Jigawa State",
+    "capital": "Dutse"
+  },
+  {
+    "id": 19,
+    "state": "Kaduna State",
+    "capital": "Kaduna"
+  },
+  {
+    "id": 20,
+    "state": "Kano State",
+    "capital": "Kano"
+  },
+  {
+    "id": 21,
+    "state": "Katsina State",
+    "capital": "Katsina"
+  },
+  {
+    "id": 22,
+    "state": "Kebbi State",
+    "capital": "Birnin Kebbi"
+  },
+  {
+    "id": 23,
+    "state": "Kogi State",
+    "capital": "Lokoja"
+  },
+  {
+    "id": 24,
+    "state": "Kwara State",
+    "capital": "Ilorin"
+  },
+  {
+    "id": 25,
+    "state": "Lagos State",
+    "capital": "Ikeja"
+  },
+  {
+    "id": 26,
+    "state": "Nasarawa State",
+    "capital": "Lafia"
+  },
+  {
+    "id": 27,
+    "state": "Niger State",
+    "capital": "Minna"
+  },
+  {
+    "id": 28,
+    "state": "Ogun State",
+    "capital": "Abeokuta"
+  },
+  {
+    "id": 29,
+    "state": "Ondo State",
+    "capital": "Akure"
+  },
+  {
+    "id": 30,
+    "state": "Osun State",
+    "capital": "Oshogbo"
+  },
+  {
+    "id": 31,
+    "state": "Oyo State",
+    "capital": "Ibadan"
+  },
+  {
+    "id": 32,
+    "state": "Plateau State",
+    "capital": "Jos"
+  },
+  {
+    "id": 33,
+    "state": "Rivers State",
+    "capital": "Port Harcourt"
+  },
+  {
+    "id": 34,
+    "state": "Sokoto State",
+    "capital": "Sokoto"
+  },
+  {
+    "id": 35,
+    "state": "Taraba State",
+    "capital": "Jalingo"
+  },
+  {
+    "id": 36,
+    "state": "Yobe State",
+    "capital": "Damaturu"
+  },
+  {
+    "id": 37,
+    "state": "Zamfara State",
+    "capital": "Gusau"
+  }
+]
