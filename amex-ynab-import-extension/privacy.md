@@ -1,13 +1,13 @@
 ---
-layout: page
+layout: post
 title: Privacy Policy - AMEX → YNAB Import Extension
 permalink: /amex-ynab-import-extension/privacy/
 ---
 
 # Privacy Policy for AMEX → YNAB Import Extension
 
-**Last Updated**: December 6, 2025
-**Effective Date**: December 6, 2025
+**Last Updated**: December 10, 2025
+**Effective Date**: December 10, 2025
 
 ## Overview
 
@@ -131,10 +131,9 @@ This Extension is designed for users of American Express Germany. We do not spec
 
 ## Contact Information
 
-If you have questions about this privacy policy or the Extension's data practices:
+If you have questions about this privacy policy or the Extension's data practices, please contact us at:
 
-- **GitHub Issues**: [Report an Issue](https://github.com/yemexx1/amex-ynab-import-extension/issues)
-- **Email**: [Create contact email or link to GitHub profile]
+- **Email**: amexynabimportextension@gmail.com
 
 ## Legal Basis (GDPR Compliance)
 
