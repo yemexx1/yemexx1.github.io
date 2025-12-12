@@ -88,9 +88,6 @@ The Extension requests these Chrome permissions:
 | Permission | Why We Need It |
 |------------|----------------|
 | `storage` | To save your YNAB credentials locally on your device |
-| `scripting` | To inject code into AMEX pages to read transaction data |
-| `activeTab` | To access the current AMEX tab when you click "Start Import" |
-| `notifications` | To show you status updates during the import process |
 | `tabs` | To open AMEX dashboard page when starting import |
 | Host: `americanexpress.com` | To read transaction data from AMEX pages |
 | Host: `api.youneedabudget.com` | To send transactions to YNAB API |
